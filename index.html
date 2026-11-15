@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StayHaven Hotel | Rooms, Dining &amp; Direct Booking</title>
+<meta name="description" content="Comfortable rooms, fine dining and warm hospitality. Book direct on WhatsApp and save on every stay.">
+<meta name="theme-color" content="#1b1712">
+<meta property="og:title" content="StayHaven Hotel | Book Direct and Save">
+<meta property="og:description" content="Comfortable rooms, fine dining and warm hospitality. Book direct and save.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23c9a24a'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' font-family='Georgia' fill='%231b1712'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className+=" js"</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Hotel","name":"StayHaven Hotel","telephone":"+91 00000 00000","address":{"@type":"PostalAddress","streetAddress":"12 Lake View Road","addressLocality":"Your City","addressCountry":"IN"},"priceRange":"INR 1800 - 7500"}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>📍 <span data-bind="address"></span></span>
+    <span><a data-link="tel">📞 <span data-bind="phone"></span></a> &nbsp;·&nbsp; <a data-link="mail">✉️ <span data-bind="email"></span></a></span>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="Home">
+      <span class="logo-mark">S</span>
+      <span><b data-bind="name"></b><small>HOTEL &amp; RESORT</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#offers">Offers</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#dining">Dining</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+      <a class="btn btn-gold btn-sm" href="#booking">Book Now</a>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-slides" id="heroSlides"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">★★★★★ &nbsp;Guest rated 4.8 / 5</span>
+    <h1 id="heroTitle">Your home away from home</h1>
+    <p id="heroSub">Comfortable rooms, delicious food and warm hospitality. Book direct and enjoy the best rates.</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="#booking">Check Availability</a>
+      <a class="btn btn-ghost" href="#rooms">Explore Rooms</a>
+    </div>
+    <div class="dots" id="heroDots"></div>
+  </div>
+</section>
+
+<!-- QUICK SEARCH -->
+<div class="wrap">
+  <form class="quick" id="quickForm">
+    <div class="field"><label for="qIn">Check-in</label><input type="date" id="qIn" required></div>
+    <div class="field"><label for="qOut">Check-out</label><input type="date" id="qOut" required></div>
+    <div class="field"><label for="qGuests">Guests</label>
+      <select id="qGuests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+    <div class="field"><label for="qRoom">Room</label><select id="qRoom"></select></div>
+    <button class="btn btn-gold" type="submit">Check availability</button>
+  </form>
+</div>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap about">
+    <div class="reveal">
+      <span class="kicker">About us</span>
+      <h2>A stay that feels personal, every single time</h2>
+      <p>Welcome to StayHaven, a family-run hotel where comfort meets genuine hospitality. From the moment you arrive, our team is here to make your stay smooth, relaxed and memorable, whether you are travelling for business, a family holiday or a weekend break.</p>
+      <p>Book directly with us for the best rates, free cancellation on most bookings and a warm welcome drink on arrival.</p>
+      <ul class="ticks">
+        <li>Best price when you book direct</li>
+        <li>Free Wi-Fi in every room</li>
+        <li>24x7 front desk &amp; room service</li>
+        <li>Airport and station pickup</li>
+        <li>Complimentary breakfast on select rooms</li>
+        <li>Clean, safe and family friendly</li>
+      </ul>
+      <a class="btn btn-dark" href="#booking">Book your stay</a>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><b data-count="15" data-suf="+">0</b><span>Years of hospitality</span></div>
+      <div class="stat"><b data-count="60">0</b><span>Rooms &amp; suites</span></div>
+      <div class="stat"><b data-count="25000" data-suf="+">0</b><span>Happy guests</span></div>
+      <div class="stat"><b data-count="4.8" data-dec="1">0</b><span>Average guest rating</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section class="sec alt" id="rooms">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Accommodation</span>
+      <h2>Rooms &amp; Suites</h2>
+      <p>Pick the room that fits your trip. All rates are per night, taxes extra.</p>
+    </div>
+    <div class="chips" id="roomFilters"></div>
+    <div class="grid" id="roomGrid"></div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="sec dark" id="offers">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Special offers</span>
+      <h2>Save more when you book direct</h2>
+      <p>Apply a coupon code in the booking form and see your discount instantly.</p>
+    </div>
+    <div class="grid" id="offerGrid"></div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="sec" id="amenities">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Facilities</span>
+      <h2>Everything for a comfortable stay</h2>
+      <p>Thoughtful amenities so you can simply relax and enjoy.</p>
+    </div>
+    <div class="amen" id="amenityGrid"></div>
+  </div>
+</section>
+
+<!-- DINING -->
+<section class="sec alt" id="dining">
+  <div class="wrap dine">
+    <div class="reveal">
+      <span class="kicker">Dining</span>
+      <h2>Taste the flavours of home</h2>
+      <p class="lead">Our in-house restaurant serves fresh, hygienic and delicious food, from hearty breakfasts to candle-light dinners. Vegetarian and non-vegetarian options available.</p>
+      <div class="timings">
+        <div><b>Breakfast</b><span>7:30 AM - 10:30 AM</span></div>
+        <div><b>Lunch</b><span>12:30 PM - 3:30 PM</span></div>
+        <div><b>Dinner</b><span>7:30 PM - 11:00 PM</span></div>
+      </div>
+      <a class="btn btn-dark" data-link="wa" target="_blank" rel="noopener">Reserve a table on WhatsApp</a>
+    </div>
+    <div class="menu-box reveal">
+      <div class="chips left" id="menuTabs"></div>
+      <div id="menuList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section class="sec" id="explore">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Explore</span>
+      <h2>Things to do nearby</h2>
+      <p>Our front desk will happily arrange cabs, guides and tickets for you.</p>
+    </div>
+    <div class="grid" id="attractGrid"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec alt" id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Photos</span>
+      <h2>Gallery</h2>
+      <p>A glimpse of life at StayHaven.</p>
+    </div>
+    <div class="chips" id="galFilters"></div>
+    <div class="gal" id="galGrid"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" id="reviews">
+  <div class="wrap reviews">
+    <div class="score reveal">
+      <b>4.8</b>
+      <div class="stars big">★★★★★</div>
+      <p>Based on guest reviews</p>
+      <div class="bars">
+        <div><span>5★</span><i style="--w:82%"></i></div>
+        <div><span>4★</span><i style="--w:14%"></i></div>
+        <div><span>3★</span><i style="--w:3%"></i></div>
+        <div><span>2★</span><i style="--w:1%"></i></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="slider"><div class="track" id="reviewTrack"></div></div>
+      <div class="dots dark-dots" id="reviewDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="sec alt" id="booking">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Reservation</span>
+      <h2>Book your stay</h2>
+      <p>Fill in your details. We will confirm your booking on WhatsApp within minutes.</p>
+    </div>
+    <div class="book-grid">
+      <form class="panel reveal" id="bookForm" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="bName">Full name</label><input id="bName" required placeholder="Your name" autocomplete="name"></div>
+          <div class="field"><label for="bPhone">Phone / WhatsApp</label><input id="bPhone" type="tel" required placeholder="10-digit number" autocomplete="tel"></div>
+          <div class="field full"><label for="bEmail">Email (optional)</label><input id="bEmail" type="email" placeholder="you@example.com" autocomplete="email"></div>
+          <div class="field"><label for="bIn">Check-in</label><input id="bIn" type="date" required></div>
+          <div class="field"><label for="bOut">Check-out</label><input id="bOut" type="date" required></div>
+          <div class="field"><label for="bRoom">Room type</label><select id="bRoom"></select></div>
+          <div class="field"><label for="bRooms">Number of rooms</label>
+            <select id="bRooms"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+          <div class="field"><label for="bAdults">Adults</label>
+            <select id="bAdults"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+          <div class="field"><label for="bKids">Children</label>
+            <select id="bKids"><option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+          <div class="full"><p class="note" id="capNote"></p></div>
+          <div class="field full"><label for="bCoupon">Coupon code</label>
+            <div class="coupon-row"><input id="bCoupon" placeholder="e.g. STAY10" autocomplete="off"><button type="button" class="btn btn-line" id="applyCoupon">Apply</button></div>
+            <p class="note" id="couponMsg"></p></div>
+          <div class="field full"><label for="bReq">Special requests</label><textarea id="bReq" rows="3" placeholder="Early check-in, extra bed, airport pickup, celebration..."></textarea></div>
+        </div>
+        <button class="btn btn-gold btn-block big" type="submit">Request booking on WhatsApp</button>
+        <p class="note center">No payment needed now. Final rate is confirmed by our team.</p>
+      </form>
+
+      <aside class="panel summary reveal" aria-live="polite">
+        <h3>Booking summary</h3>
+        <div class="sum-row"><span>Room</span><b id="sumRoom">-</b></div>
+        <div class="sum-row"><span>Stay</span><b id="sumNights">-</b></div>
+        <div class="sum-row"><span>Room charges</span><b id="sumBase">-</b></div>
+        <div class="sum-row" id="sumDiscRow" hidden><span>Discount</span><b id="sumDisc" class="green">-</b></div>
+        <div class="sum-row"><span id="sumGstLabel">GST</span><b id="sumGst">-</b></div>
+        <div class="sum-row total"><span>Estimated total</span><b id="sumTotal">-</b></div>
+        <ul class="mini">
+          <li>✔ Free cancellation up to 48 hours before check-in</li>
+          <li>✔ Best price guarantee on direct bookings</li>
+          <li>✔ Check-in <span data-bind="checkInTime"></span> · Check-out <span data-bind="checkOutTime"></span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap narrow">
+    <div class="sec-head reveal">
+      <span class="kicker">Help</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq reveal" id="faqList"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec alt" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Find us</span>
+      <h2>Contact &amp; location</h2>
+    </div>
+    <div class="contact">
+      <div class="info-list reveal">
+        <div class="info"><span>📍</span><div><b>Address</b><p data-bind="address"></p></div></div>
+        <div class="info"><span>📞</span><div><b>Phone</b><p><a data-link="tel"><span data-bind="phone"></span></a></p></div></div>
+        <div class="info"><span>💬</span><div><b>WhatsApp</b><p><a data-link="wa" target="_blank" rel="noopener">Chat with us</a></p></div></div>
+        <div class="info"><span>✉️</span><div><b>Email</b><p><a data-link="mail"><span data-bind="email"></span></a></p></div></div>
+        <div class="info"><span>🕒</span><div><b>Front desk</b><p>Open 24 hours, 7 days a week</p></div></div>
+      </div>
+      <!-- To show a real map: replace this div with a Google Maps <iframe> embed code -->
+      <div class="map reveal">🗺️<br>Add your Google Maps embed here</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a href="#home" class="logo"><span class="logo-mark">S</span><span><b data-bind="name" style="color:#fff"></b><small>HOTEL &amp; RESORT</small></span></a>
+      <p class="fmuted">Comfortable rooms, great food and warm hospitality. Book direct and save.</p>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <a href="#rooms">Rooms</a><a href="#offers">Offers</a><a href="#dining">Dining</a><a href="#gallery">Gallery</a>
+    </div>
+    <div>
+      <h4>Guest info</h4>
+      <a href="#faq">FAQs</a><a href="#booking">Book a room</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <a data-link="tel"><span data-bind="phone"></span></a>
+      <a data-link="mail"><span data-bind="email"></span></a>
+      <div class="social"><a href="#" aria-label="Instagram">📸</a><a href="#" aria-label="Facebook">👍</a><a href="#" aria-label="YouTube">▶️</a></div>
+    </div>
+  </div>
+  <div class="wrap copy">&copy; <span id="year"></span> <span data-bind="name"></span> Hotel. All rights reserved.</div>
+</footer>
+
+<!-- ROOM MODAL -->
+<div class="modal" id="roomModal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-box">
+    <button class="modal-x" aria-label="Close">×</button>
+    <div class="modal-media" id="mMedia"></div>
+    <div class="modal-body">
+      <h3 id="mTitle"></h3>
+      <div class="meta" id="mMeta"></div>
+      <p id="mDesc"></p>
+      <h4>Room features</h4>
+      <ul class="feat" id="mFeat"></ul>
+      <div class="modal-foot">
+        <div class="price" id="mPrice"></div>
+        <button class="btn btn-gold" id="mBook">Book this room</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Gallery">
+  <button class="lb-btn lb-x" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <div class="lb-media" id="lbMedia"></div>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next">›</button>
+  <p class="lb-cap" id="lbCap"></p>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<a class="fab-wa" data-link="wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<nav class="mbar" aria-label="Quick actions">
+  <a data-link="tel">📞 Call</a>
+  <a data-link="wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+  <a href="#booking" class="gold">Book now</a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
